@@ -1,5 +1,5 @@
 
-// Q1 two sum problem
+// Q1 two sum problem that add up to target 
 // var array = [2,7,11,15];
 // var target = 9;
 
@@ -35,22 +35,27 @@
 // var number = 0;
 // while (number < array.length) {
 //   if ((array[number] != target)) {
-//     console.log(array[number]);
+//     console.log(array);
 //   }
 //   number++;
 // }
 
-
-// var array = [0,1,2,2,3,0,4,2];
+//  print in array form [0,1,3,0,4]
+// var array = [0, 1, 2, 2, 3, 0, 4, 2];
 // var target = 2;
 
-// var number = 0;
-// while (number < array.length) {
-//   if ((array[number] != target)) {
-//     console.log(array[number]);
+// var index = 0;
+
+// for (var i = 0; i < array.length; i++) {
+//   if (array[i] !== target) {
+//     array[index] = array[i];
+//     index++;
 //   }
-//   number++;
 // }
+// array.length = index;
+
+// console.log(array);
+
 
 // var array = [1,1,1,1];
 // var target = 1;
@@ -66,6 +71,20 @@
 
 
 
+// Q4 sum of gitit of number input 13 output 5
+
+// var number = 123;
+
+// var sum = 0;
+
+// while (number > 0) {
+//   var digit = number % 10;
+
+//   sum += digit;
+
+//   number = Math.floor(number / 10);
+// }
+// console.log(sum);
 
 
 
@@ -147,6 +166,25 @@
 
 
 
+// Q6 move zero to end input [0,1,0,3,12] output[1,3,12,0,0]
+
+// var array = [0, 1, 0, 3, 12];
+
+// var index = 0;
+
+// for (var i = 0; i < array.length; i++) {
+//   if (array[i] !== 0) {
+//     array[index] = array[i];
+//     index++;
+//   }
+// }
+// while (index < array.length) {
+//   array[index] = 0;
+//   index++;
+// }
+
+// console.log(array);
+
 
 
  // Q10 count occurence
@@ -206,7 +244,7 @@
     // function findPeakElement(array) {
     //     for (let i = 0; i < array.length; i++) {
            
-    //         if (i === array.length - 1 || array[i] >= array[i + 1]) {
+    //         if ( array[i] >= array[i + 1]) {
     //             return array[i];
     //         }
     //     }
@@ -216,21 +254,7 @@
     
 
     
-    var array = [1,2,3,1]; 
-    function findPeakElement(array) {
-        for (let i = 0; i < array.length; i++) {
-           
-            if (i === array.length - 1 || array[i] >= array[i + 1]) {
-                return array[i];
-            }
-        }
-    
-    }
-    console.log(findPeakElement(array));
-    
-
-
-    // var array = [1,2,3,5,6,4]; 
+    // var array = [1,2,3,1]; 
     // function findPeakElement(array) {
     //     for (let i = 0; i < array.length; i++) {
            
@@ -241,6 +265,23 @@
     
     // }
     // console.log(findPeakElement(array));
+    
+
+    // var array = [1, 2, 1, 3, 5, 6, 4];
+
+    // function findPeakElement(array) {
+    //     for (let i = array.length - 1; i >= 0; i--) {
+    //         if (
+    //             (i === 0 || array[i] >= array[i - 1]) && 
+    //             (i === array.length - 1 || array[i] >= array[i + 1]) 
+    //         ) {
+    //             return array[i]; 
+    //         }
+    //     }
+    // }
+    
+    // console.log(findPeakElement(array));
+    
 
 
 
@@ -286,5 +327,37 @@
     
 
 
+// Q 17 gwnrate pascal triangle 
+// function generatePascalsRow(n) {
+//     let row = [1]; 
+
+//     for (let i = 1; i <= n; i++) {
+//         row[i] = row[i - 1] * (n - i + 1) / i;
+//     }
+
+//     return row;
+// }
+// let n = 3;
+// console.log(generatePascalsRow(n)); 
 
    
+
+// q20 count distinct elemnt in array input[1,2,2,3] output 3
+// function countDistinctElements(arr) {
+//     let distinctCount = 0;
+//     let seen = [];  
+
+//     for (let i = 0; i < arr.length; i++) {
+        
+//         if (!seen.includes(arr[i])) {
+//             seen.push(arr[i]);  
+//             distinctCount++;     
+//         }
+//     }
+
+//     return distinctCount; 
+// }
+
+
+// let input = [1, 2, 2, 3];
+// console.log(countDistinctElements(input)); 
