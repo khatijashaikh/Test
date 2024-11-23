@@ -361,3 +361,62 @@
 
 // let input = [1, 2, 2, 3];
 // console.log(countDistinctElements(input)); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Q14 number is prime
+
+
+// const number = 5;
+// function primeNumber(n) {
+//     if (n <= 1) return false;
+//     for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) return false;
+//     }
+//     return true;
+// }
+
+// console.log(primeNumber(number));
+
+
+
+
+// const number = 4;
+// function primeNumber(n) {
+//     if (n <= 1) return false;
+//     for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) return false;
+//     }
+//     return true;
+// }
+
+// console.log(primeNumber(number));
+
+
+// const number = 11;
+// function primeNumber(n) {
+//     if (n <= 1) return false;
+//     for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) return false;
+//     }
+//     return true;
+// }
+
+// console.log(primeNumber(number));
